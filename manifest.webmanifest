@@ -3,6 +3,11 @@
   "name": "Hello, PWA!",
   "icons": [
     {
+      "src": "./icons/icon-180.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    },
+    {
       "src": "./icons/icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
