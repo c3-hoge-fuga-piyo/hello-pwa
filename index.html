@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="icons/icon-512.png">
+  <link rel="manifest" href="/manifest.json">
+  <title>Hello, PWA!</title>
+</head>
+<body>
+  <main>
+  <h1>Hello, PWA!</h1>
+  </main>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => navigator.serviceWorker.register('/service-worker.js')
+        .then(registration => console.log(registration.scope))
+        .catch(error => console.error(error)));
+    }
+  </script>
+</body>
+</html>
